@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_main_bottm"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/top_stork"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/ll_main_one"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_main_one"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tab_main" />
+
+                <View
+                    android:id="@+id/vw_main_one"
+                    android:layout_width="8dip"
+                    android:layout_height="8dip"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/iv_main_one"
+                    android:background="@drawable/bg_red_circle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_main_one"
+                style="@style/MainButtonStyle"
+                android:text="宠物家" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_two"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_main_two"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tab_knowledge" />
+
+                <View
+                    android:id="@+id/vw_main_two"
+                    android:layout_width="8dip"
+                    android:layout_height="8dip"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/iv_main_two"
+                    android:background="@drawable/bg_red_circle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_main_two"
+                style="@style/MainButtonStyle"
+                android:text="宠圈" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_three"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_main_three"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tab_order" />
+
+                <View
+                    android:id="@+id/vw_main_three"
+                    android:layout_width="8dip"
+                    android:layout_height="8dip"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/iv_main_three"
+                    android:background="@drawable/bg_red_circle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_main_three"
+                style="@style/MainButtonStyle"
+                android:text="订单" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_main_four"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/iv_main_four"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/tab_my" />
+
+                <View
+                    android:id="@+id/vw_main_four"
+                    android:layout_width="8dip"
+                    android:layout_height="8dip"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/iv_main_four"
+                    android:background="@drawable/bg_red_circle"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_main_four"
+                style="@style/MainButtonStyle"
+                android:text="我的" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_main_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_main_bottm"
+        android:background="@color/white" />
+
+</RelativeLayout>

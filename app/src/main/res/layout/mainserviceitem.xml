@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginBottom="15dip"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/sriv_mainserviceitem_img"
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icon_production_default" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/sriv_mainserviceitem_img">
+
+        <ImageView
+            android:id="@+id/iv_mainserviceitem_hot"
+            android:layout_width="28.4dip"
+            android:layout_height="12.8dip"
+            android:layout_marginLeft="30dip"
+            android:layout_marginTop="2dip"
+            android:background="@drawable/icon_hot_mainservice"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_mainserviceitem_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sriv_mainserviceitem_img"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dip"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="洗澡"
+        android:textColor="@color/a333333"
+        android:textSize="14sp" />
+
+</RelativeLayout>

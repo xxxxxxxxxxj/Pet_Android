@@ -23,7 +23,7 @@ public class ADActivity extends AppActivity {
 
     @Override
     public void initParms(Intent intent) {
-
+        String action = intent.getAction();
     }
 
     @Override
